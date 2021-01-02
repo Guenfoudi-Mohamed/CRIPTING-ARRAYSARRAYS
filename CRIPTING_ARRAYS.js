@@ -1,9 +1,9 @@
                                                                             /*crypting for << ARRAYS*/ 
 
-var m="013",maj="4011",dim="5454"
-var list_1 = ["M","O","H","A","M","E","D","G","U","E","N","F","O","U","D","I"];
+var m="014",maj="043",dim="0454"
+var list_1 = ["M-","O-","H-","A-","M-","E-","D-","G-"];
 var list_2 = [m,maj,dim];
-var v2="";
+var v2="";var v1;
 
 var list = function(n1,n2){                                                          /*<<< function expression*/
     if(!isNaN(n1) & !isNaN(n2)){
@@ -11,14 +11,27 @@ var list = function(n1,n2){                                                     
             n1-=1;
             n2-=1; 
             if(!isNaN(list_2[n2])){
-                for(var t1 = 0;t1 < list_2[n2].length ;t1++){
-                    if(list_2[n2][t1] == 0){var  v1=-1;}else{var v1=0}
-                    for(;v1 < list_2[n2][t1];v1++){
+                if(list_2[n2][0] == 0){
+                    var o1 = -1;
+                    for(var t1 = 0;t1 < list_2[n2].length ;t1++){
+                        for(v1 = o1;v1 < list_2[n2][t1];v1++){
+                            if(list_1[n1] == list_1[list_1.lenght-1]){
+                                n1=0;
+                            }
+                            v2 +=list_1[n1];
+                            n1+=1;   
+                        }
+                        break;
+                    }
+                }
+                var o1 = 0;
+                for(var t1 = o1;t1 < list_2[n2].length ;t1++){
+                    for(v1 = o1;v1 < list_2[n2][t1];v1++){
                         if(list_1[n1] == list_1[list_1.lenght-1]){
                             n1=0;
                         }
                         v2 +=list_1[n1];
-                        n1+=1;
+                        n1+=1;   
                     }
                 }
                 document.write("<mark style=font-family:'consolas';font-size:20px;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);TEXT-ALIGN:CENTER;>",v2,"</mark>");
