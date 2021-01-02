@@ -1,7 +1,7 @@
                                                                             /*crypting for << ARRAYS*/ 
 
-var m="014",maj="043",dim="0454"
-var list_1 = ["M-","O-","H-","A-","M-","E-","D-","G-"];
+var m="3",maj="043",dim="0454"
+var list_1 = ["M-","O-"];
 var list_2 = [m,maj,dim];
 var v2="";var v1;
 
@@ -16,7 +16,9 @@ var list = function(n1,n2){                                                     
                     for(var t1 = 0;t1 < list_2[n2].length ;t1++){
                         for(v1 = o1;v1 < list_2[n2][t1];v1++){
                             if(list_1[n1] == list_1[list_1.lenght-1]){
+                                v2 +=list_1[n1];    
                                 n1=0;
+                                continue;
                             }
                             v2 +=list_1[n1];
                             n1+=1;   
@@ -25,10 +27,12 @@ var list = function(n1,n2){                                                     
                     }
                 }
                 var o1 = 0;
-                for(var t1 = o1;t1 < list_2[n2].length ;t1++){
+                for(var t1 = 0;t1 < list_2[n2].length ;t1++){
                     for(v1 = o1;v1 < list_2[n2][t1];v1++){
-                        if(list_1[n1] == list_1[list_1.lenght-1]){
+                        if(list_1[n1] == list_1[list_1.length-1]){
+                            v2 +=list_1[n1];    
                             n1=0;
+                            continue;
                         }
                         v2 +=list_1[n1];
                         n1+=1;   
