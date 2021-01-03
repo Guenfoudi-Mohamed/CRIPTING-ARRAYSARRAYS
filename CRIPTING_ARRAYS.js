@@ -1,7 +1,7 @@
                                                                             /*crypting for << ARRAYS*/ 
 
 var m="044340",maj="043",dim="0454"
-var list_1 = ["M-","O-","H-","A-","M-","E-","D-","G-","U","E-","F-","O-","U-","D-","I-"];
+var list_1 = ["M-","O-","H-","A-","M-","E-","D-","G-","U-","E-","F-","O-","U-","D-","I-"];
 var list_2 = [m,maj,dim];
 var v2="";var v1;
 
