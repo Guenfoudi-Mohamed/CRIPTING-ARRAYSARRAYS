@@ -4,7 +4,6 @@ var m="043",maj="034",dim="555"
 var list_1 = [" A"," A#"," B"," C"," C#"," D"," D#"," E"," F"," F#"," G"," G#"];
 var list_2 = [m,maj,dim];
 var v2="";var v1;
-document.write(list_2,"<br>",list_1);
 var list = function(n1,n2){                                                          /*<<< function expression*/
     if(!isNaN(n1) & !isNaN(n2)){
         if((n1 > 0 && n1 <= list_1.length) && (n2 > 0 && n2 <= list_2.length)){
