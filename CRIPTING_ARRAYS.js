@@ -54,4 +54,4 @@ var list = function(n1,n2){                                                     
         document.write("<Mark style=font-family:'consolas';font-size:20px;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);text-align:center;>INCORECT n1 or n2 is not a nomber TRY AGAINE!!</mark>");
     }
 }
-list(12,1);    /*enter here a number list(num,num);*/
+list(12,1);    /*enter here a number list(Starting_station,Mobility_values);*/
